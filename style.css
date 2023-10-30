@@ -18,7 +18,7 @@ nav{
     z-index:99;
 }
  
-nav .nav-left, nav .nav-right
+nav .nav-left, nav .nav-right, nav .nav-middle
 {
     display:flex;
     align-items: center;
@@ -96,13 +96,14 @@ nav .nav-middle a > i{
 }
 
 
-nav .nav-right .profile{
+ nav .nav-right .profile, .newfeeds .left-panel.profile{
     background: url('./images/selfpic.jpg');
     height:30px;
     width:30px;
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
+    scale: 1.2;
 }
 
 nav .nav-right a{
@@ -114,7 +115,7 @@ nav .nav-right a{
     background:#eee;
     display:flex;
     place-items: center;
-    margin-right: 150px;
+    margin-right: 10px;
 }
 
 nav .nav-right a > i{
@@ -126,14 +127,236 @@ nav .nav-right a > i{
 
 
 
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+
+img {
+    width: 40px;
+    height: 30px;
+}
+
 .newfeeds{
     background:#eee;
     display:flex;
 }
 
-.newfeeds .left-panel, .newfeeds .right-panel{
+.newfeeds .left-panel,.newfeeds .right-panel{
     position: sticky;
     top:70px;
     width:250px;
-    height:calc(100vh - 70px);
+    height:calc(115vh - 70px);
 }
+
+.newfeeds .left-panel ul{
+    padding: 10px 0px;
+}
+
+
+.newfeeds .left-panel ul li{
+    list-style-type: none;
+    display: flex;
+    padding: .7rem 1rem;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.newfeeds .left-panel ul li:hover{
+    background: #ddd;
+}
+
+.newfeeds .left-panel ul li > p{
+    margin-left: 10px;
+}
+.newfeeds .left-panel ul li img{
+   border-radius :50%;
+}
+.newfeeds .left-panel ul li > i{
+    font-size: 20px;
+    border-radius: 50%;
+    color: slateblue;
+}
+
+.newfeeds .left-panel ul li .profile{
+    background: url('./images/selfpic.jpg');
+    height:28px;
+    width:28px;
+    background-size:cover;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.newfeeds .left-panel ul li .see-more a{
+    text-decoration: none;
+    color:#333;
+    height:28px;
+    width :28px;
+    border-radius: 50%;
+    background : #E4E6EB;
+    place-items:center;
+    margin-right: 10px;
+
+}
+.newfeeds .left-panel ul li .see-more a > i{
+    font-size:20px;
+    place-items: center;
+}
+
+.newfeeds .left-panel .link{
+    padding:5px 1rem;
+}
+
+.newfeeds .left-panel .link a{
+    text-decoration: none;
+    color:#333;
+    font-size:12px;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+
+
+
+.newfeeds .middle-panel{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.newfeeds .middle-panel .story-section{
+    display:flex;
+}
+
+
+.newfeeds .middle-panel .story-section .story-create{
+    width: 120px;
+    height: 200px;
+    border-radius: 10px;
+    position : relative;
+}
+
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------------------------------ */
+
+
+
+
+.post{
+    width:550px;
+    background:#fff;
+    border-radius:10px;
+    padding:10px;
+    margin:10px;
+}
+
+.post .post-top{
+    display:flex;
+    align-items: center;
+    padding:10px;
+}
+
+.post .post-top .dp{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+.post .post-top .dp > img{
+    width:100%;
+    cursor:pointer;
+}
+
+.post .post-top .post-info{
+    margin-left:10px;    
+    font-weight: bold;
+}
+
+.post .post-top .post-info .name{
+    cursor:pointer;
+    font-size:16px;
+}
+
+.post .post-top .post-info .time{
+    font-size:12px;
+    cursor:pointer;
+}
+
+.post .post-top i{
+    margin-left:auto;
+    cursor: pointer;
+}
+
+.post .post-top > input{
+    height:40px;
+    padding:5px 10px;
+    border-radius:25px;
+    outline:none;
+    border:none;
+    flex:1;
+    background:#eee;
+    margin-left:10px;
+}
+
+.post .post-content{
+    font-size:16px;
+    font-weight:normal;
+    padding:10px;
+}
+
+.post .post-content > img{
+    width:100%;
+    margin:5px 0px;
+}
+
+.post .post-bottom{
+    box-shadow: 1px solid #ddd;
+    display:flex;
+    justify-content: space-between;
+    padding:5px 5px 0px 5px;
+}
+
+.post .post-bottom .action{
+    padding:10px;
+    border-radius:10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+}
+
+.post .post-bottom .action:hover{
+    background:#eee;
+}
+
+.post.create .post-bottom > .action{
+    color:#d74;
+}
+
+
+
+
+
