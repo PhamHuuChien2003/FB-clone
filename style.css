@@ -379,6 +379,7 @@ img {
 }
 .post-create .post-create-bot{
     display: flex;
+    margin-top: -5px;
 }
 .post-create .post-top{
     display: flex;
