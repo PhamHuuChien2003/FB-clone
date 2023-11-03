@@ -528,8 +528,9 @@ hr.line{
 
 
 .right-panel{
-    padding: .7rem 1rem;
     width:280px;
+    padding: 0px 0px 0px;
+    /* margin-left: -120px; */
 }
 .Birthdays a{
     display: flex;
