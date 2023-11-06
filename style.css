@@ -787,5 +787,12 @@ hr.line{
 .dot-bl p{
     color:#1877F2;
 }
+.friend:hover{
+    background: #ddd;
+}
+.birthdaybutton:hover{
+    background: #ddd;
+    
+}
 
 
