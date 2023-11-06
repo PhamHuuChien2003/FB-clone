@@ -263,16 +263,25 @@ img {
     place-items: center;
 }
 
-.newfeeds .left-panel .link{
+.newfeeds .left-panel .links{
     padding:5px 1rem;
 }
-
-.newfeeds .left-panel .link a{
-    text-decoration: none;
-    color:#333;
-    font-size:12px;
+.c4{
+    display: flex;
+}
+.c3l{
+    display: flex;
 }
 
+.newfeeds .left-panel .links p{
+    text-decoration: none;
+    color:#65676B;
+    font-size:13px;
+    cursor: pointer;
+}
+.dot{
+
+}
 
 
 
