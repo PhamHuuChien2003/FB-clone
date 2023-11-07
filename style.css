@@ -199,6 +199,7 @@ img {
     overflow-y: auto;
 }
 
+
 .newfeeds .left-panel .left-panel-but ul{
     width:280px;
     padding: 0px 8px;
@@ -280,7 +281,9 @@ img {
     cursor: pointer;
 }
 .dot{
-
+    color:#65676B;
+    padding: 2px 2px;
+    margin-top: -6px;
 }
 
 
@@ -302,7 +305,6 @@ img {
 }
 .post-bot hr{
     width:468px;
-
 }
 
 .newfeeds .middle-panel .story-section{
@@ -427,7 +429,10 @@ img {
 .post-create .post-top{
     display: flex;
 }
-
+.post-create hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .post{
     width:500px;
     margin-top :20px;
@@ -460,7 +465,7 @@ img {
 .post .post-top .post-info{
     width:348px;
     height:46.39px;
-    margin-left:10px;
+    margin-left:15px;
 }
 .post .post-top .post-info .name{
     height:20px;
@@ -469,6 +474,11 @@ img {
     color:#050505;
     font-family: Arial, Helvetica, sans-serif ;
 }
+
+.post-info-bl{
+    display:flex;
+}
+
 .post .post-top .post-info .time{
     height:17.6px;
     color:#65676B;
@@ -486,11 +496,63 @@ img {
     margin-bottom: 10px;
     border:none;
     color:65676B;
+}
+.avt-gr-p-3{
+    position: relative;
+    z-index: 2;
+}
+.avt-gr-p-3 img{
+    height:36px;
+    width:36px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #65676B 0.5px solid;
+}
+.avt-person-post-3{
+   
+    position: absolute;
+    z-index: 3;
+}
+.avt-person-post-3 img{
+    width:24px;
+    height:24px;
+    border:#fff 2px solid;
+    border-radius: 50px;
+    margin-top:16px;
+    margin-left:24px;
+}
 
+.post .post-top .post-info .name-p-3{
+    height:20px;
+    cursor:pointer;
+    font-size:13px;
+    color:#65676B;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.post .post-content p{
+    height:19,99px;
+    width:468px;
+    color:#050505;
+    font-size:15px;
+    padding-left:16px;
+}
+.post .post-content .hashtag{
+    color: #0866FF;
+}
+.post-content img{
+    width:500px;
+    height:500px;
+    margin-left:-16px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.post-content >video{
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .post-bot{
     width:500px;
-    height:88px;
+    height:70px;
 }
 .post .post-bot .button-below-Post{
     display:flex;
@@ -523,6 +585,58 @@ img {
     padding: 2.5px;
 }
 /* ------ */
+.post-bot .like-descrip{
+    width:468px;
+    height:42px;
+    margin: 0px 16px;
+    padding:10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.post-bot .like-descrip .like-descrip-left, .post-bot .like-descrip .like-descrip-right{
+    display: flex;
+    align-items: center;
+}
+.post-bot .like-descrip .like-descrip-left .img-1{
+    position: absolute;
+    z-index: 3;
+}
+.post-bot .like-descrip .like-descrip-left .img-1 img{
+    width:18px;
+    height:18px;
+    border: #fff 1px solid;
+    border-radius: 50px;
+    margin-left:-15px
+}
+
+.post-bot .like-descrip .like-descrip-left .img-2{
+    position: relative;
+    z-index: 2;
+}
+.post-bot .like-descrip .like-descrip-left .img-2 img{
+    width:18px;
+    height:18px;
+    border: #fff 1px solid;
+    border-radius: 50px;
+}
+.post-bot .like-descrip .like-descrip-left p{
+    font-size: 15px;
+    color : #65676B;
+    padding: 0px 0px 0px 4px;
+}
+.post-bot .like-descrip .like-descrip-right{
+    color : #65676B;
+    padding: 4px;
+}
+.post-bot .like-descrip .like-descrip-right i{
+    width:16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.post-bot .like-descrip .like-descrip-right p{
+    font-size: 15px;
+}
 
 .post .post-bot .button-below-post{
     width:161.34px;
@@ -559,8 +673,6 @@ hr.line{
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(156, 151, 151, 0.3);
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 /* ------------------------------------------------ */
@@ -577,6 +689,10 @@ hr.line{
     top:70px;
     height:calc(115vh - 70px);
     overflow-y: auto;
+}
+.right-panel hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .sponsored{
     width:360px;
