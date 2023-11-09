@@ -58,7 +58,7 @@ nav .nav-left .search-section > input{
 nav .nav-middle{
     display:flex;
     align-items:flex-end;
-    margin-left: -95px;
+    margin-left: -99px;
 }
 nav .nav-middle a{
     text-decoration: none;
@@ -67,11 +67,11 @@ nav .nav-middle a{
     margin:0px 10px;
     width:111.6px;
 }
-nav .nav-middle a.active{
+nav .nav-middle a.active-1{
     color:#0866FF;
     position:relative;
 }
-nav .nav-middle a.active::after{
+nav .nav-middle a.active-1::after{
     content:'';
     width:100%;
     height:3px;
@@ -82,7 +82,23 @@ nav .nav-middle a.active::after{
 }
 nav .nav-middle a > i{
     font-size: 25px;
+    margin-left:20px;
+}
+nav .nav-middle .active-1 i{
+    font-size: 25px;
     margin-left:35px;
+}
+nav .nav-middle .active-2 i{
+    margin-left:25px;
+}
+nav .nav-middle .active-3 i{
+    margin-left:5px;
+}
+nav .nav-middle .active-4 i{
+    margin-left:-15px;
+}
+nav .nav-middle .active-5 i{
+    margin-left:-30px;
 }
 
 /* nav .nav-middle{
@@ -426,6 +442,7 @@ img {
 .post-create .post-create-bot{
     display: flex;
     margin-top: -5px;
+    margin-left: 10px;
 }
 .post-create .post-top{
     display: flex;
@@ -561,6 +578,7 @@ img {
     height:52px;
     margin: -6px -2px;
     padding: 4px;
+    align-items: center;
 }
 .post-create-bot .button-below-post-create{
     height:40px;
@@ -628,29 +646,53 @@ img {
 .post-bot .like-descrip .like-descrip-right{
     color : #65676B;
     padding: 4px;
+    margin-right: 10px;
 }
-.post-bot .like-descrip .like-descrip-right i{
+.post-bot .like-descrip .like-descrip-right img{
     width:16px;
     height:16px;
     margin-left: 4px;
     margin-right: 4px;
     color:#65676B;
 }
+/* .i-class::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #65676B;
+    opacity: 0.5;
+} */
+.iclass{
+    background-color: #65676B;
+    background: #65676B;
+}
+
 .post-bot .like-descrip .like-descrip-right p{
     font-size: 15px;
 }
+
 
 .post .post-bot .button-below-post{
     width:161.34px;
     height:44px;
     margin: -6px -2px;
-    padding: 12px;
-    align-items: center;
+    padding: 0px 12px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.button-below-post .i-fb{
+    width:28px;
+    height:32px;
+    padding:6px 4px;
+}
 
-.button-below-post img{
+.button-below-post >i{
     width:20px;
     height:20px;
     color:#65676B;
@@ -661,10 +703,26 @@ img {
     font-family: Arial, Helvetica, sans-serif;
     color:#65676B;
     height:19.99px;
-    align-items: center;
     margin-left: 10px;
     padding: 2.5px;
+    align-items: center;
 }
+.like-btn{
+    align-items: center;
+    display: flex;
+    margin-left: 25px;
+}
+.cmt-btn{
+    align-items: center;
+    display: flex;
+    margin-left: 5px;
+}
+.share-btn{
+    align-items: center;
+    display: flex;
+    margin-left: 15px;
+}
+
 svg{
     height:20px;
     width:20px;
@@ -824,10 +882,11 @@ hr.line{
     width:111px;
     height:50px;
     padding:4px;
+    justify-content: space-between;
 }
 .butt-1{
-    width:102px;
-    height:41px;
+    width:120px;
+    height:35px;
     background-color: #0866FF;
     padding: 0px 12px;
     border-radius: 10px;
@@ -840,11 +899,13 @@ hr.line{
     font-size: 15px;
     color:#FFFFFF;
     margin-top:10px;
-    margin-left: 12px
+    margin-left: 12px;
+    align-items: center;
 }
 .butt-2{
-    width:102px;
-    height:41px;
+    width:120px;
+    height:35px;
+    margin-left: 10px;;
     background-color: #E4E6EB;
     padding: 0px 12px;
     border-radius: 10px;
@@ -858,6 +919,7 @@ hr.line{
     color:#050505;
     margin-top:10px;
     margin-left: 18px;
+    align-items: center;
 }
 .Birthdays a{
     display: flex;
@@ -867,8 +929,11 @@ hr.line{
 }
 
 .friends-section .friend{
+    height:44px;
+    padding: 0px 16px;
     display: flex;
-    margin-top:15px;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .friends-section .friend .avt-person-left-panel{
@@ -913,5 +978,3 @@ hr.line{
     background: #ddd;
 
 }
-
-
