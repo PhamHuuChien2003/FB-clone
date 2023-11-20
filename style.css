@@ -64,20 +64,20 @@ nav .nav-left .search-section > input{
 }
 
 nav .nav-middle{
-    width:1366px;
+    width:842px;
     height:56px;
     display:flex;
     align-items:flex-end;
-    position:absolute;
-    z-index: 999;
     padding:0px 110px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -80px;
 }
 nav .nav-middle ul{
     width:1366px;
     height:56px;
     display: flex;
     list-style-type: none;
-    padding: 0px 284px;
     /* margin-left: 72px; */
 }
 nav .nav-middle ul li {
@@ -629,12 +629,13 @@ img {
 }
 .post .post-content{
     width:590px;
-    padding: 0px 17.165px;
+
 }
 .post .post-content p{
     height:19,99px;
     color:#050505;
     font-size:15px;
+    padding: 0px 17.165px;
 }
 .post .post-content .hashtag{
     color: #0866FF;
