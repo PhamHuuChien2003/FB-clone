@@ -358,7 +358,8 @@ img {
     align-items:center;
 }
 .post-bot hr{
-    width:588px;
+    width:580px;
+    /* margin-left: 5px; */
 }
 
 .newfeeds .middle-panel .story-section{
@@ -478,35 +479,66 @@ img {
 
 }
 .post-create .post-create-bot{
+    
+    width:558px;
+    height:48.8px;
     display: flex;
-    margin-top: -5px;
-    margin-left: 10px;
+    padding-top:8px;
     /* align-items: center; */
 }
 .post-create .post-top{
     display: flex;
+
 }
 .post-create hr{
     margin-top: 10px;
-    margin-bottom: 10px;
 }
+.post-create-bot .button-below-post-create{
+    width:186px;
+    height:40px;
+    padding: 8px;
+    display:flex;
+    align-items: center;
+    place-items: center;
+    padding-left: 25px;
+}
+
+.post-create-bot .button-below-post-create img{
+    width:26px;
+    height:26px;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#65676B;
+}
+
+.post-create-bot .button-below-post-create span{
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#65676B;
+    height:19.99px;
+    align-items: center;
+    margin-left: 10px;
+    padding: 3.5px;
+
+}
+
 .post{
     width:590px;
     margin-top :20px;
     flex:1;
     display:flex;
     flex-direction: column;
-    padding: 12px 16px 10px;
     background: #fff;
     border-radius: 10px;
 }
 
 .post .post-top{
+    width:590px;
+    height:48px;
     padding:12px 16px 0px;
     display:flex;
     align-items: center;
-    padding:10px;
-
+    margin-bottom:12px;
 }
 .avt-person-post{
     height:40px;
@@ -520,8 +552,8 @@ img {
     object-fit: cover;
 }
 .post .post-top .post-info{
-    width:348px;
-    height:46.39px;
+    width:438px;
+    height:43.99px;
     margin-left:15px;
 }
 .post .post-top .post-info .name{
@@ -545,12 +577,13 @@ img {
 
 .post-top > input{
     border-radius:25px;
-    width:420px;
+    width:510px;
     height:40px;
     background: #F2F0F5;
     padding: 8px 12px;
     font-size: 17px;
     margin-bottom: 10px;
+    margin-left: 5px;
     border:none;
     color:65676B;
     outline: none;
@@ -577,7 +610,14 @@ img {
     border:#fff 2px solid;
     border-radius: 50px;
     margin-top:16px;
-    margin-left:24px;
+    margin-left:22px;
+}
+
+.post .post-top .post-info .name-gr{
+    margin-top: 2px;
+    height:20px;
+    margin-bottom: 1px;
+
 }
 
 .post .post-top .post-info .name-p-3{
@@ -598,56 +638,33 @@ img {
     color: #0866FF;
 }
 .post-content img{
-    width:500px;
-    height:500px;
-    margin-left:-16px;
+    width:590px;
+    height:590px;
     margin-top:10px;
     margin-bottom: 10px;
 }
 .post-content >video{
+    width:590px;
+    height:332px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 .post-bot{
-    width:500px;
+    width:590px;
     height:70px;
 }
 .post .post-bot .button-below-Post{
     display:flex;
-    width:480px;
+    width:570px;
     height:52px;
     margin: -6px -2px;
     padding: 4px;
     align-items: center;
 }
-.post-create-bot .button-below-post-create{
-    height:40px;
-    padding: 8px;
-    display:flex;
-    margin-left: 7px;
-}
 
-.post-create-bot .button-below-post-create img{
-    width:26px;
-    height:26px;
-    font-size:15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#65676B;
-}
-
-.post-create-bot .button-below-post-create span{
-    font-size:15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#65676B;
-    height:19.99px;
-    align-items: center;
-    margin-left: 10px;
-    padding: 3.5px;
-
-}
 /* ------ */
 .post-bot .like-descrip{
-    width:468px;
+    width:570px;
     height:42px;
     margin: 0px 16px;
     padding:10px 0px;
@@ -661,6 +678,7 @@ img {
 .post-bot .like-descrip .like-descrip-left .img-1{
     position: absolute;
     z-index: 3;
+    margin-left: 10px;
 }
 .post-bot .like-descrip .like-descrip-left .img-1 img{
     width:18px;
@@ -673,6 +691,7 @@ img {
 .post-bot .like-descrip .like-descrip-left .img-2{
     position: relative;
     z-index: 2;
+    margin-left: 10px;
 }
 .post-bot .like-descrip .like-descrip-left .img-2 img{
     width:18px;
@@ -719,7 +738,7 @@ img {
 
 
 .post .post-bot .button-below-post{
-    width:161.34px;
+    width:191.34px;
     height:44px;
     margin: -6px -2px;
     padding: 0px 12px;
@@ -778,9 +797,8 @@ hr.line{
 }
 
 .cmt-bl-post{
-    width:500px;
+    width:590px;
     margin: 0px 0px 6px;
-    margin-left: -16px;
 }
 .cmt-bl-post .my-cmt-section{
     height:36.1px;
@@ -819,17 +837,17 @@ hr.line{
 }
 .cmt-bl-post .my-cmt-section .input-cmt{
     display: flex;
-    background-color: #eee;
+    background-color: #F0F2F5;
     border-radius: 25px;
     margin-left: 6px;
 }
 .cmt-bl-post .my-cmt-section .input-cmt input{
-    width:294px;
+    width:384px;
     height:36.1px;
     padding:8px 12px;
     outline: none;
     border:none;
-    background-color: #eee;
+    background-color: #F0F2F5;
     border-radius: 25px;
 }
 .cmt-bl-post .my-cmt-section .input-cmt .cmt-icon-butt{
@@ -841,7 +859,7 @@ hr.line{
     list-style-type: none;
     width:140px;
     height:36px;
-    margin: 0px 4px 0px -8px;
+    margin: 0px 4px 0px 0px;
     display: flex;
     align-items: center;
     margin-top: 1.75px;
@@ -866,10 +884,10 @@ hr.line{
     scale:1.2
 }
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top{
-    width:404px;
+    width:494px;
     padding: 8px 12px;
     border-radius: 20px;
-    background: #eee;
+    background: #F0F2F5;
     margin-left: 7px;
 }
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top a{
@@ -918,7 +936,7 @@ hr.line{
     color:#65676B;
     margin-left: 10px;
 }
-.cmt-bl-post .public-cmt .view-more{
+.cmt-bl-post .view-more{
     width:468px;
     height:32px;
     padding:0px 6px 0px 0px;
@@ -926,7 +944,7 @@ hr.line{
     margin-top: 10px;
     margin-bottom: -12px;;
 }
-.cmt-bl-post .public-cmt .view-more p{
+.cmt-bl-post .view-more p{
     font-size: 15px;
     color:#65676B;
     align-items: center;
@@ -951,10 +969,10 @@ hr.line{
     height:calc(115vh - 70px);
     overflow-y: auto;
 }
-.right-panel hr{
+/* .right-panel hr{
     margin-top: 10px;
     margin-bottom: 10px;
-}
+} */
 .sponsored{
     width:360px;
     flex:1;
@@ -962,48 +980,52 @@ hr.line{
     flex-direction: column;
 }
 .name-tags{
-    width:360px;
-    height:48.857px;
-    padding:20px 0px 4px; 
-    margin-top: -10px;
+    width:311.2px;
+    height:36px;
+    padding:20px 16px 4px 16px;
+
 }
 .name-tags p{
-    width:336.571px;
-    height:28.5px;
+    width:279.2px;
+    height:21px;
     padding:0px 0px 1px;
-    padding: 0px 16px;
     font-size: 17px;
     color:#65676B;
 }
 .sponsored{
-    height:300px;
-    padding: 8px 0px;
+    width:311.2px;
+    height:271.35px;
     flex:1;
     display: flex;
     flex-direction: column;
 }
 .sponsored .sponsored-sections{
-    width:358.286px;
-    height:156.343px;
+    width:295.2px;
+    height:127.68px;
     margin: 0px 8px;
     padding: 8px;
     display: flex;
 }
-.sponsored .sponsored-sections img{
+.sponsored .sponsored-sections .sponsored-sections-is{
+    width:279.2px;
+    height:111.68px;
+    display: flex;
+}
+.sponsored .sponsored-sections .sponsored-sections-is img{
     border-radius: 10px;
-    width:134.6286px;
-    height:134.6286px;
+    width:111.68px;
+    height:111.68px;
     
 }
-.sponsored .sponsored-sections .descri .descri-top{
+.sponsored .sponsored-sections .sponsored-sections-is .descri .descri-top{
     width:170.498px;
     height:19.99px;
     font-size: 15px;
     color: #050505;
-    margin-top:49.3143px;
-    margin-left: 10px;
+    margin-top:37.84px;
+    margin-left: 10px; 
 }
-.sponsored .sponsored-sections .descri .descri-bot{
+.sponsored .sponsored-sections .sponsored-sections-is .descri .descri-bot{
     width:170.498px;
     height:16px;
     font-size: 13px;
@@ -1011,20 +1033,21 @@ hr.line{
     margin-left: 10px;
 }
 .Friend-requests{
-    width:360px;
-    height:100px;
-    padding:8px 8px;
+    width:311.2px;
+    height:110px;
+    margin:0px 8px;
+    padding:8px;
     display: flex;
 }
 .Friend-requests .avt-fr-rq{
-    height:46.67px;
+    height:40;
     flex:1;
     display: flex;
     flex-direction: column;
 }
 .Friend-requests img{
-    width:46.67px;
-    height:46.67px;
+    width:40px;
+    height:40px;
     border-radius: 50px;
 }
 .Friend-requests .avt-fr-rq img{
@@ -1060,13 +1083,17 @@ hr.line{
     border-radius: 50px;
 }
 .fr-1{
+    width: 20px;
+    height: 20px;
     border: 3px solid #fff ;
     position:absolute;
     z-index: 2;
     border-radius: 50px;
 }
 .fr-2{
-    border: 3px solid #fff ;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff ;
     position: relative;
     z-index: 1;
     margin-left:13px;
@@ -1080,13 +1107,11 @@ hr.line{
 
 .button-below-fr-rq{
     display:flex;
-    width:111px;
     height:50px;
     padding:4px;
-    justify-content: space-between;
 }
 .butt-1{
-    width:120px;
+    width:100px;
     height:35px;
     background-color: #0866FF;
     padding: 0px 12px;
@@ -1100,11 +1125,11 @@ hr.line{
     font-size: 15px;
     color:#FFFFFF;
     margin-top:10px;
-    margin-left: 12px;
+    margin-left: 9px;
     align-items: center;
 }
 .butt-2{
-    width:120px;
+    width:100px;
     height:35px;
     margin-left: 10px;;
     background-color: #E4E6EB;
@@ -1119,18 +1144,41 @@ hr.line{
     font-size: 15px;
     color:#050505;
     margin-top:10px;
-    margin-left: 18px;
+    margin-left: 15px;
     align-items: center;
 }
-.Birthdays a{
+.Birthdays{
+    width:311.2px;
+    height:70.97px;
+    padding: 8px 0px;
+}
+.Birthdays .birthdaybutton{
+    width:295.2px;
+    height: 54.98px;
+    padding: 0px 8px;
     display: flex;
-    margin-top:15px;
     justify-content: left;
     align-items: center;
 }
-
+.Birthdays .birthdaybutton .obj{
+    width: 36px;
+    height: 36px;
+}
+.Birthdays .birthdaybutton .obj img{
+    width: 36px;
+    height: 36px;
+}
+.Birthdays .birthdaybutton p{
+    font-size: 15px;
+    color: #050505;
+}
+.friends-section{
+    width:311.2px;
+    padding: 8px 0px;
+}
 .friends-section .friend{
-    height:44px;
+    width:311.2;
+    height:52px;
     padding: 0px 16px;
     display: flex;
     align-items: center;
@@ -1141,8 +1189,8 @@ hr.line{
     display: flex;
 }
 .friends-section .friend .avt-person-left-panel img{
-    height:28px;
-    width:28px;
+    height:36px;
+    width:36px;
     border-radius: 50px;
     object-fit: cover;
     position: relative;
@@ -1155,22 +1203,19 @@ hr.line{
     font-size:15px;
     color:#050505;
     font-family:Arial, Helvetica, sans-serif ;
-    margin-top: 5px;
+    align-items: center;
     margin-left: 10px;
 }
 .dot-bl{
     position:absolute;
     z-index: 2;
     background-color: #21cc6b;
-    border:#fff 2px solid;
-    width:8px;
-    height:8px;
+    border:#F0F2F5 2px solid;
+    width:10px;
+    height:10px;
     border-radius:50px;
-    margin-top: 20px;
-    margin-left: 18px;
-}
-.dot-bl p{
-    color:#1877F2;
+    margin-top: 26px;
+    margin-left: 26px;
 }
 .friend:hover{
     background: #ddd;
