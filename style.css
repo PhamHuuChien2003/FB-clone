@@ -777,6 +777,7 @@ img {
     background-color: #65676B;
     opacity: 0.8;
     margin-left: 396px;
+    cursor: pointer;
 }
 .post-content .bg-ct .album-img .i3-img-ln-2 .blur-more-img p{
     font-size: 30px;
