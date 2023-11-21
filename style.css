@@ -460,6 +460,7 @@ img {
     z-index: 2;
     position: absolute;
     border-radius: 50%;
+    background-color:#F0F2F5 ;
 }
 
 .newfeeds .story-section .story-create .poc:hover > img{
@@ -1267,10 +1268,15 @@ hr.line{
     padding: 8px;
     display: flex;
 }
+.sponsored .sponsored-sections:hover{
+    background-color: #ddd;
+    border-radius: 10px;
+}
 .sponsored .sponsored-sections .sponsored-sections-is{
     width:279.2px;
     height:111.68px;
     display: flex;
+    cursor: pointer;
 }
 .sponsored .sponsored-sections .sponsored-sections-is img{
     border-radius: 10px;
@@ -1420,6 +1426,7 @@ hr.line{
     display: flex;
     justify-content: left;
     align-items: center;
+    cursor: pointer;
 }
 .Birthdays .birthdaybutton .obj{
     width: 36px;
@@ -1483,4 +1490,5 @@ hr.line{
 }
 .birthdaybutton:hover{
     background: #ddd;
+    border-radius: 10px;
 }
