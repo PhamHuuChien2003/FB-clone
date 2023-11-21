@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: inherit;
 }
-
+img{
+    cursor: pointer;
+}
 nav{
     height:56px;
     width:100%;
@@ -86,6 +88,10 @@ nav .nav-middle ul li {
     padding: 16px 0px;
     margin-right:5px;
     
+}
+nav .nav-middle ul li:hover{
+    background-color: #F0F2F5;
+    border-radius: 10px;
 }
 nav .nav-middle ul li a{
     text-decoration: none;
@@ -224,14 +230,18 @@ img {
 
 .newfeeds .left-panel{
     position: sticky;
+    top:30px;
     width:311px;
     height:calc(115vh - 70px);
     overflow-y: auto;
 }
 
 .newfeeds .left-panel .left-panel-but{
+    position: sticky;
     width:311px;
     margin-top: 10px;
+    height:calc(115vh - 70px);
+    overflow-y: auto;
 }
 
 .newfeeds .left-panel .left-panel-but ul{
@@ -241,6 +251,7 @@ img {
     flex-direction: column;
     width:311px;
     padding: 0px 8px;
+    overflow-y: auto;
 }
 
 
@@ -349,7 +360,7 @@ img {
 
 .newfeeds .middle-panel{
     position: static;
-    width: 743.98px;
+    width: 744px;
     padding:0px 76.99px;
     flex:1;
     display:flex;
@@ -471,7 +482,7 @@ img {
 
 .post-create{
     width: 590px;
-    height:123px;
+    height:127px;
     padding: 12px 16px 10px;
     margin-top: 10px;
     background: #fff;
@@ -481,7 +492,7 @@ img {
 .post-create .post-create-bot{
     
     width:558px;
-    height:48.8px;
+    height:52.8px;
     display: flex;
     padding-top:8px;
     /* align-items: center; */
@@ -501,6 +512,11 @@ img {
     align-items: center;
     place-items: center;
     padding-left: 25px;
+    cursor: pointer;
+}
+.post-create-bot .button-below-post-create:hover{
+    background-color: #F0F2F5;
+    border-radius: 10px;
 }
 
 .post-create-bot .button-below-post-create img{
@@ -574,6 +590,9 @@ img {
     font-size:13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.post .post-top .post-info .time:hover{
+    text-decoration: underline;
+}
 
 .post-top > input{
     border-radius:25px;
@@ -587,6 +606,10 @@ img {
     border:none;
     color:65676B;
     outline: none;
+    cursor: pointer;
+}
+.post-top > input:hover{
+    background-color: #E4E6EB;
 }
 .avt-gr-p-3{
     position: relative;
@@ -617,7 +640,11 @@ img {
     margin-top: 2px;
     height:20px;
     margin-bottom: 1px;
+    cursor: pointer;
 
+}
+.post .post-top .post-info .name-gr:hover{
+    text-decoration: underline;
 }
 
 .post .post-top .post-info .name-p-3{
@@ -626,6 +653,9 @@ img {
     font-size:13px;
     color:#65676B;
     font-family: Arial, Helvetica, sans-serif ;
+}
+.post .post-top .post-info .name-p-3:hover{
+    text-decoration: underline;
 }
 .post .post-content{
     width:590px;
@@ -661,7 +691,7 @@ img {
 .post .post-bot .button-below-Post{
     display:flex;
     width:570px;
-    height:52px;
+    height:60px;
     margin: -6px -2px;
     padding: 4px;
     align-items: center;
@@ -771,6 +801,10 @@ img {
 .post-bot .like-descrip .like-descrip-left, .post-bot .like-descrip .like-descrip-right{
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.post-bot .like-descrip .like-descrip-left:hover, .post-bot .like-descrip .like-descrip-right:hover{
+    text-decoration: underline;
 }
 .post-bot .like-descrip .like-descrip-left .img-1{
     position: absolute;
@@ -836,12 +870,15 @@ img {
 
 .post .post-bot .button-below-post{
     width:191.34px;
-    height:44px;
+    height:42px;
     margin: -6px -2px;
     padding: 0px 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-bottom: 4px;
 }
 
 .button-below-post .i-fb{
@@ -879,6 +916,10 @@ img {
     align-items: center;
     display: flex;
     margin-left: 45px;
+}
+.post .post-bot .button-below-post:hover{
+    background-color: #F0F2F5;
+    border-radius: 10px;
 }
 
 svg{
@@ -951,6 +992,7 @@ hr.line{
     width:140px;
     height:36px;
     display: flex;
+    margin-right: 10px;
 }
 .cmt-bl-post .my-cmt-section .input-cmt .cmt-icon-butt ul{
     list-style-type: none;
@@ -960,6 +1002,21 @@ hr.line{
     display: flex;
     align-items: center;
     margin-top: 1.75px;
+    cursor: pointer;
+}
+.cmt-bl-post .my-cmt-section .input-cmt .cmt-icon-butt ul li{
+    width:26px;
+    height:26px;
+    align-items: center;
+    margin-bottom: 3px;
+}
+.cmt-bl-post .my-cmt-section .input-cmt .cmt-icon-butt ul li>i{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.cmt-bl-post .my-cmt-section .input-cmt .cmt-icon-butt ul li:hover{
+    background-color: #aaaaaa;
+    border-radius: 50px;
 }
 
 .cmt-bl-post .public-cmt{
@@ -1041,6 +1098,9 @@ hr.line{
     height:210px;
     border-radius: 10px;
 }
+.cmt-ct .name{
+    cursor: pointer;
+}
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top a{
     font-size: 13px;
     color:#050505;
@@ -1062,8 +1122,11 @@ hr.line{
    margin-left: 10px;
    font-size:12px;
    color:#65676B;
+   cursor: pointer;
 }
-
+.cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-bot ul >li:hover{
+    text-decoration: underline;
+}
 
 .cmt-bl-post .public-cmt .cmt-top-4{
     display: flex;
@@ -1111,6 +1174,10 @@ hr.line{
     padding: 0px 6px 0px 0px;
     display: flex;
     margin-top: 8px;
+    cursor: pointer;
+}
+.cmt-bl-post .public-cmt .cmt-bot .cmt-rep:hover{
+    text-decoration: underline;
 }
 .cmt-bl-post .public-cmt .cmt-bot .cmt-rep img{
     width:16px;
@@ -1131,6 +1198,10 @@ hr.line{
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: -12px;;
+    cursor: pointer;
+}
+.cmt-bl-post .view-more:hover{
+    text-decoration: underline;
 }
 .cmt-bl-post .view-more p{
     font-size: 15px;
@@ -1154,7 +1225,7 @@ hr.line{
     width:311px;
     padding: 0px 0px 0px;
     position: sticky;
-    top:70px;
+    top:60px;
     height:calc(115vh - 70px);
     overflow-y: auto;
 }
@@ -1170,8 +1241,9 @@ hr.line{
 }
 .name-tags{
     width:311.2px;
-    height:36px;
+    height:44px;
     padding:20px 16px 4px 16px;
+    margin-bottom: 8px;
 
 }
 .name-tags p{
