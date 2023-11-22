@@ -893,7 +893,7 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-1st-choice{
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -901,7 +901,7 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-2nd-choice{
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -909,7 +909,7 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-3rd-choice{
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -917,7 +917,7 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-4th-choice{
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -925,7 +925,7 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-5th-choice{
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     flex: 1;
     display: flex;
     flex-direction: column;
