@@ -184,7 +184,7 @@ nav .nav-right a > i{
 .nav-dot-bl{
     position:absolute;
     z-index: 3;
-    background-color: #cc2121;
+    background-color: #e91c1c;
     border:#fff 2px solid;
     width:20px;
     height:20px;
@@ -368,9 +368,9 @@ img {
     align-items:center;
     overflow-y: auto;
 }
-.post-bot hr{
-    width:580px;
-    /* margin-left: 5px; */
+.post hr{
+    width:570px;
+    margin-left: 10px;
 }
 
 .newfeeds .middle-panel .story-section{
@@ -580,7 +580,9 @@ img {
     color:#050505;
     font-family: Arial, Helvetica, sans-serif ;
 }
-
+.post .post-top .post-info .name:hover{
+    text-decoration: underline;
+}
 .post-info-bl{
     display:flex;
 }
@@ -789,8 +791,146 @@ img {
     margin-left: 54.4px;
     margin-top: 79.8px;
 }
+.post-content .Vote-sections{
+    width: 590px;
+    height:403.95px;
+    padding:12px;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
 
-
+.post-content .Vote-sections ul{
+    list-style-type: none;
+}
+.post-content .Vote-sections ul li{
+    width: 566px;
+    height:65.6px;
+    padding-bottom: 8px;
+    display: flex;
+}
+.post-content .Vote-sections ul li .vote{
+    display: flex;
+    width: 566px;
+    height:56px;
+    padding: 8px 0px;
+    justify-content: space-between;
+    border:#d6d6d6 1px solid;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+.post-content .Vote-sections ul li .vote .percent-voted-1{
+    position: absolute;
+    z-index: 3;
+    width:79.24px;
+    height:56px;
+    background-color: #E7F3FF;
+    margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.post-content .Vote-sections ul li .vote .percent-voted-2{
+    position: absolute;
+    z-index: 3;
+    width:147.16px;
+    height:56px;
+    background-color: #E7F3FF;
+    margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.post-content .Vote-sections ul li .vote .percent-voted-3{
+    position: absolute;
+    z-index: 3;
+    width:16.98px;
+    height:56px;
+    background-color: #E7F3FF;
+    margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.post-content .Vote-sections ul li .vote .percent-voted-4{
+    position: absolute;
+    z-index: 3;
+    width:16.98px;
+    height:56px;
+    background-color: #E7F3FF;
+    margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.post-content .Vote-sections ul li .vote .percent-voted-5{
+    position: absolute;
+    z-index: 3;
+    width:181.12px;
+    height:56px;
+    background-color: #E7F3FF;
+    margin-top: -8px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.post-content .Vote-sections ul li .vote .square-choose{
+    position: absolute;
+    align-items: center;
+    width:36px;
+    height:40px;
+    padding-left: 12px;
+    z-index: 4;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark{
+    display: block;
+    cursor: pointer;
+    width:24px;
+    height:24px;
+    margin:8px 0px;
+    z-index: 5;
+    border-radius: 5px;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark input{
+    width: 24px;
+    height:24px
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-1st-choice{
+    position: absolute;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-2nd-choice{
+    position: absolute;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-3rd-choice{
+    position: absolute;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-4th-choice{
+    position: absolute;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-5th-choice{
+    position: absolute;
+    z-index: 3;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* ------ */
 .post-bot .like-descrip{
     width:570px;
@@ -1047,12 +1187,18 @@ hr.line{
     background: #F0F2F5;
     margin-left: 7px;
 }
+.cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top-1 .name:hover{
+    text-decoration: underline;
+}
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top-2{
     width:494px;
     padding: 8px 12px;
     border-radius: 20px;
     background: #F0F2F5;
     margin-left: 7px;
+}
+.cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top-2 .name:hover{
+    text-decoration: underline;
 }
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top-3{
     width:340px;
@@ -1061,6 +1207,9 @@ hr.line{
     background: #F0F2F5;
     margin-left: 7px;
 }
+.cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-top-3 .name:hover{
+    text-decoration: underline;
+}
 .cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-1{
     width: 220px;
     padding: 8px 12px;
@@ -1068,12 +1217,24 @@ hr.line{
     background: #F0F2F5;
     margin-left: 7px;
 }
+.cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-1 .name{
+    cursor: pointer;
+}
+.cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-1 .name:hover{
+    text-decoration: underline;
+}
 .cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-2{
     width:120px;
     padding: 8px 12px;
     border-radius: 20px;
     background: #F0F2F5;
     margin-left: 7px;
+}
+.cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-2 .name{
+    cursor: pointer;
+}
+.cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-top-4-2 .name:hover{
+    text-decoration: underline;
 }
 .cmt-ct-img-4-1{
     width:183px;
@@ -1129,7 +1290,9 @@ hr.line{
 .cmt-bl-post .public-cmt .cmt-top .cmt-ct .cmt-ct-bot ul >li:hover{
     text-decoration: underline;
 }
-
+.cmt-bl-post .public-cmt .cmt-top-4 .cmt-ct .cmt-ct-bot ul >li:hover{
+    text-decoration: underline;
+}
 .cmt-bl-post .public-cmt .cmt-top-4{
     display: flex;
     width:500px;
@@ -1164,6 +1327,7 @@ hr.line{
    margin-left: 10px;
    font-size:12px;
    color:#65676B;
+   cursor: pointer;
 }
 .cmt-bl-post .public-cmt .cmt-bot{
     width:500px;
@@ -1308,7 +1472,7 @@ hr.line{
     display: flex;
 }
 .Friend-requests .avt-fr-rq{
-    height:40;
+    height:40px;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -1317,6 +1481,7 @@ hr.line{
     width:40px;
     height:40px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .Friend-requests .avt-fr-rq img{
     width:16px;
@@ -1336,8 +1501,11 @@ hr.line{
     font-size: 15px;
     color:#050505;
     margin-left: 10px;
+    cursor: pointer;
 }
-
+.fr-rq-dc p:hover{
+    text-decoration: underline;
+}
 .fr-rq-dc-bot{
     display: flex;
     width:170px;
@@ -1372,7 +1540,9 @@ hr.line{
     font-size: 13px;
     color: #65676B;
 }
-
+.fr-rq-dc-bot span:hover{
+    text-decoration: underline;
+}
 .button-below-fr-rq{
     display:flex;
     height:50px;
@@ -1441,6 +1611,10 @@ hr.line{
     font-size: 15px;
     color: #050505;
 }
+.Birthdays .birthdaybutton p>b:hover{
+    text-decoration: underline;
+
+}
 .friends-section{
     width:311.2px;
     padding: 8px 0px;
@@ -1474,6 +1648,9 @@ hr.line{
     font-family:Arial, Helvetica, sans-serif ;
     align-items: center;
     margin-left: 10px;
+}
+.friends-section .friend .name:hover{
+    text-decoration: underline;
 }
 .dot-bl{
     position:absolute;
