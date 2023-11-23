@@ -814,17 +814,17 @@ img {
     width: 566px;
     height:56px;
     padding: 8px 0px;
-    justify-content: space-between;
     border:#d6d6d6 1px solid;
     border-radius: 10px;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 }
 .post-content .Vote-sections ul li .vote .percent-voted-1{
     position: absolute;
     z-index: 3;
     width:79.24px;
-    height:56px;
+    height:55px;
     background-color: #E7F3FF;
     margin-top: -8px;
     border-bottom-left-radius: 10px;
@@ -834,7 +834,7 @@ img {
     position: absolute;
     z-index: 3;
     width:147.16px;
-    height:56px;
+    height:55px;
     background-color: #E7F3FF;
     margin-top: -8px;
     border-bottom-left-radius: 10px;
@@ -844,7 +844,7 @@ img {
     position: absolute;
     z-index: 3;
     width:16.98px;
-    height:56px;
+    height:55px;
     background-color: #E7F3FF;
     margin-top: -8px;
     border-bottom-left-radius: 10px;
@@ -854,7 +854,7 @@ img {
     position: absolute;
     z-index: 3;
     width:16.98px;
-    height:56px;
+    height:55px;
     background-color: #E7F3FF;
     margin-top: -8px;
     border-bottom-left-radius: 10px;
@@ -864,7 +864,7 @@ img {
     position: absolute;
     z-index: 3;
     width:181.12px;
-    height:56px;
+    height:55px;
     background-color: #E7F3FF;
     margin-top: -8px;
     border-bottom-left-radius: 10px;
@@ -889,47 +889,98 @@ img {
 }
 .post-content .Vote-sections ul li .vote .square-choose .setting-check-mark input{
     width: 24px;
-    height:24px
+    height:24px;
 }
-.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-1st-choice{
+.post-content .Vote-sections ul li .vote .name-1st-choice{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 60px;
 }
-.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-2nd-choice{
+.post-content .Vote-sections ul li .vote .name-2nd-choice{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 60px;
 }
-.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-3rd-choice{
+.post-content .Vote-sections ul li .vote .name-3rd-choice{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 60px;
 }
-.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-4th-choice{
+.post-content .Vote-sections ul li .vote .name-4th-choice{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-left: 60px;
 }
-.post-content .Vote-sections ul li .vote .square-choose .setting-check-mark .name-5th-choice{
+.post-content .Vote-sections ul li .vote .name-5th-choice{
     position: absolute;
-    z-index: 5;
+    z-index: 4;
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
+}
+.added-by{
+    color:#65676B;
+    font-size: 13px;
+    padding: 0px 0px 1px;
+}
+.added-by > b{
+    color: #0064D1;
+}
+.added-by > b:hover{
+    text-decoration: underline;
+}
+.name-choice{
+    color: #050505;
+    font-size: 15px;
+}
+.name-choice-1{
+    margin-top: 10px;
+}
+.result-percent-voted{
+    padding-left: 515px;
+    padding-top:10px;
+    justify-content: right;
     align-items: center;
+}
+.result-percent-voted span{
+    color:#0064D1;
+    font-size: 15px;
+}
+.result-percent-voted i{
+    width:12px;
+    height:12px;
+    margin-bottom: -5px;
+}
+.see-all-voted{
+    width:565px;
+    height:36px;
+    background-color: #E4E6EB;
+    border-radius: 5px;
+    padding:0px 12px;
+    align-items: center;
+    cursor: pointer;
+}
+.see-all-voted:hover{
+    background-color: #d3d3d3;
+}
+.see-all-voted p{
+    color:#050505;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 210px;;
 }
 /* ------ */
 .post-bot .like-descrip{
